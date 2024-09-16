@@ -14,7 +14,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Sokkhann/spring-cloud-config
+          uri: https://github.com/anji4246/app-config
           force-pull: true
           skipSslValidation: true
           timeout: 10
