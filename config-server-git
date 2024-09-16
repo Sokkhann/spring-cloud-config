@@ -1,0 +1,25 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server-git
+  security:
+    basic:
+      enabled: true
+    user:
+      name: user
+      password: password
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Sokkhann/spring-cloud-config
+          force-pull: true
+          skipSslValidation: true
+          timeout: 10
+          username: ${GIT_USERNAME}  # Replace with your GitHub username
+          password: ${GIT_PASSWORD}    # Replace with your GitHub password or token
+
+encrypt:
+  key: G5v3Kj9&*wLh8pQz2@Rj4$Tf6NnZ1uWk
